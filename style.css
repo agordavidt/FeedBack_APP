@@ -1,0 +1,54 @@
+body{
+    background-color: bisque;
+}
+.nav-a {
+    background-color: green;
+}
+.nav-a ul {
+    display: flex;
+}
+.nav-a ul li{
+    margin: 2em;
+    list-style: none;
+}
+.nav-a ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+.nav-a ul li .sub-menu{
+    display: none;
+}
+.nav-a ul li:hover .sub-menu{
+    display: block;
+    background-color: green;
+    position: absolute;
+}
+.nav-a ul li:hover .sub-menu ul{
+    display: block;
+    width: 13em;
+}
+.nav-a ul li:hover .sub-menu ul li{
+    border-bottom: 1px dotted yellow;
+
+}
+.nav-a ul li:hover .sub-menu ul li:last-child{
+    border-bottom: none;
+}
+h1{
+    color: brown;
+}
+.figure{
+   position: relative;
+   top: 0;
+   left: 0;
+}
+#footer_img, img{
+    width: 2em;
+    height: 2em;
+
+}
+.footer_nav_bar, a{
+    margin: 1px;
+    color: black;
+}
