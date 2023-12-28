@@ -31,6 +31,46 @@ $hex = [
     'white'=> 'fff'
 ];
 
-echo $hex['white'];
+// echo $hex['white'];
+
+// print_r($colors);
+
+
+$person = [
+    'first_name' => 'David',
+    'last_name'=> 'Agor',
+    'email' => 'davidagort@gmail.com'
+];
+
+//echo $person['first_name'];
+
+// Multi-Dimensional Arrays
+
+$people =[ 
+    [
+    'first_name' => 'David',
+    'last_name'=> 'Agor',
+    'email' => 'davidagort@gmail.com'
+    ],
+    [
+    'first_name' => 'Joel',
+    'last_name'=> 'Abbah',
+    'email' => 'nungwa91@gmail.com'
+    ],
+    [
+    'first_name' => 'Joseph',
+    'last_name'=> 'Ataboh',
+    'email' => 'edeboratb@gmail.com'
+    ]
+];
+
+//echo $people[2]['email'];
+var_dump(json_encode($people));
+
+// json_encode: turns associative array to json object
+// json_decode: turns json object to an associative array
+
+
+
 
 ?>
