@@ -78,13 +78,10 @@ switch($favColor){
         break;
     case 'green':
         echo "Your favourtie color is $favColor";
-        brea;
+        break;
     default:
-    echo "you don't have a favourite color";
+        echo "you don't have a favourite color";
 }
-
-
-
 
 
 ?>
