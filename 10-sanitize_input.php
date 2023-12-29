@@ -1,50 +1,25 @@
 <?php 
-/** ---- $_GET & $_POST Superglobals ---- */
-
-/**
- * We can pass data through urls and forms using the $_GET and $_POST superglobals.
- */
-
- // echo $_GET['name'];
-
- //echo 'Hello ' . PHP_EOL . ' David';
-
 
  if(isset($_POST['submit'])){
-    echo $_POST['fname'] . '<br>';
-    echo $_POST['lname'];
-    echo $_POST['email'];
- }
-
-
-
- // GET can be used for urls and forms
- // POST can only be used for forms
-
-
+    echo $_POST['name'] . '<br>';
+    echo $_POST['age'];    
+ } 
 
 ?>
 
-<a href="<?php echo $_SERVER['PHP_SELF']; ?>?name=John">Click</a>
+
 
 <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
 <h1>Registration Form</h1>
     <div>
-        <label for="fname">First Name: </label>
-        <input type="text" name="fname">
+        <label for="name">Name: </label>
+        <input type="text" name="name">
     </div>
     <div>
-        <label for="lname">Last Name: </label>
-        <input type="text" name="lname">
+        <label for="age">Age: </label>
+        <input type="text" name="age">
     </div>
-    <div>
-        <label for="email">email: </label>
-        <input type="email" name="email">
-    </div>
-    <div>
-        <label for="phone">phone: </label>
-        <input type="phone" name="phone">
-    </div>
+    
     <input type="submit" value="submit" name="submit">
 
 </form>
