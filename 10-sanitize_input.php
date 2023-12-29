@@ -1,15 +1,26 @@
 <?php 
 
  if(isset($_POST['submit'])){
-    echo $_POST['name'] . '<br>';
-    echo $_POST['age'];    
+    // using htmlspecialchars to sanitize
+
+   // $name = htmlspecialchars($_POST['name']);
+    //$age = htmlspecialchars($_POST['age']);
+
+    //using filter inputs to sanitize
+    $name = filter_input(INPUT_POST, 'name', FILTER_SANITIZE_SPECIAL_CHARS);
+    $age = filter_input(INPUT_POST,'age', FILTER_SANITIZE_SPECIAL_CHARS);
+
+
+    echo $name;
+    echo $age;
+    
  } 
 
 ?>
 
 
 
-<form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
+<form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="POST">
 <h1>Registration Form</h1>
     <div>
         <label for="name">Name: </label>
