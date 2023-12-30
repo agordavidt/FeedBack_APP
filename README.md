@@ -1,16 +1,11 @@
-# PHP Crash Course
-This PHP Crash course is for beginners and those that want a refresher.
-The course will cover all the fundamentals of PHP language and Syntax.
-After that there is a feedback application.
+# PHP Programming
+## What is PHP
+- PHP was created by Rasmus Lerdorf in 1994 and orginally stood for **Personal Home Page** but it now stands for the recursive backronym **PHP: Hypertext Preprocessor**.
+- PHP is a server-side scritpting language designed for web development but also used as a general-purpose programming language.
+- PHP code may be embedded into HTML code, or it can be used in combination with various web template systems, web content management systems and web frameworks.
+- PHP doce is usually processed by a PHP interpreter implemented as a module in the web server or as a Common Gateway Interface (CGI) executable.
 
 
-## What is PHP?
-- general-purpose scripting language geared toward web development
-- it does not run on the browser like javascript, it runs server side
-- nterpreted server-side language
-- can be written alongside HTML within PHP tags <?php ?>
-- often used with relational databases such as MySQL
-- Relatively easy language to learn
 
 ## How PHP Works
 1. Browser sends a request to the server
