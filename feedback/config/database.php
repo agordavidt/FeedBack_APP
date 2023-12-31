@@ -1,19 +1,21 @@
 <?php 
-define('DB_HOST', 'localhost');
-define('DB_USER','john');
-define('DB_PASS','123456');
-define('DB_NAME','self_dev');
+
+$host = 'localhost';
+$username = 'david';
+$password = "123456";
+$database = 'self_dev';
 
 
-// create connection
-$conn = new mysqli(DB_HOST, DB_USER, DB_PASS, DB_NAME);
+// creating -daabase connection
+$con = mysqli_connect($host, $username, $password, $database);
 
-// Check connection
-if($conn->connect_error) {
-    die('Connection Failed'. $conn->connect_error);
 
+//check databae connection
+if(!$con){
+    die('Connection Failed'. mysqli_connect_error());
+}else{
+    echo "Connected Successfully";
 }
 
-echo 'CONNECTED';
 
 ?>
