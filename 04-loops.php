@@ -72,4 +72,3 @@ foreach($person as $key => $value) {
 }
     
 
-?>

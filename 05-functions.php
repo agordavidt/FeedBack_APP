@@ -35,4 +35,3 @@ $subtract = function($n1, $n2){
 $multiply = fn($n1, $n2) => $n1 * $n2; // arrow function
 echo $multiply(5, 3);
 
-?>

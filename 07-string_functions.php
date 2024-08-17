@@ -53,4 +53,3 @@ echo htmlspecialchars($str3);
 // formatted strings
 printf('%s likes to %s', 'David', 'code');
 
-?>

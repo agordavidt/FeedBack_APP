@@ -73,4 +73,3 @@ var_dump(json_encode($people));
 
 
 
-?>
