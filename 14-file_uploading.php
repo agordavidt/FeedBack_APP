@@ -9,7 +9,7 @@ if(isset($_POST['submit'])){
         $file_type = $_FILES['upload']['type'];
         $file_tmp = $_FILES['upload']['tmp_name'];
         //target directory
-        $target_dir = "uploads/${file_name}";
+        $target_dir = "uploads/$file_name";
 
         // Get file ext
         $file_ext = explode('.', $file_name);
