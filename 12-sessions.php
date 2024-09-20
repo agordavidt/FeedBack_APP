@@ -25,7 +25,7 @@
     
 
 
-    if($username == 'malu' && $password == 'password'){
+    if($username == 'malujohn' && $password == 'password'){
         $_SESSION['username'] = $username;
         header('Location: /PHP-Backend/extras/dashboard.php'); // redirect file
     } else {
