@@ -29,7 +29,7 @@
         $_SESSION['username'] = $username;
         header('Location: /PHP-Backend/extras/dashboard.php'); // redirect file
     } else {
-        echo 'incorrect login credentials';
+        echo '<p style="color: red;">incorrect login credentials</p>';
     }
  } 
 
