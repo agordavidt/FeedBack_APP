@@ -11,7 +11,7 @@
     != Not equal to
     !== Not Identical to    
 */
-/* ------------------ if statements --------------------- */
+/* -------------- if statements --------------------- */
 
 /*
 ** if Statement Syntax
